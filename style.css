@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css?family=Fondamento|Nunito:300,400&display=swap');
+:root {
+    --crna: #292f36;    /* rgb(41, 47, 54) */
+    --zelena: #4ecdc4;  /* rgb(78, 205, 196) */
+    --bela: #fff;
+    --crvena: #ff6b6b;  /* rgb(255, 107, 107) */
+    --svetlosiva: #ede8e8;
+    --padding: 100px 0;
+}
+/*************************
+basic style
+***************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Fondamento', cursive;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+}
+button {
+    font-size: 1.2rem;
+    padding: 15px 30px;
+    margin-top: 20px;
+    background: transparent;
+    color: var(--crvena);
+    border: 2px solid var(--crvena);
+    border-radius: 50px;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+/*************************
+header
+***************************/
+header {
+   background-image: linear-gradient(rgba(41, 47, 54, .85),rgba(41, 47, 54, .85)),url(img/header.jpg);
+   height: 600px; 
+   background-position: center;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+header hgroup {
+    text-align: center;
+}
+header h1 {
+    font-size: 3.8rem;
+    color: var(--bela);
+}
+header p {
+    color: #bdbbbe;
+    font-size: 1.3rem;
+}
+
+/*************************
+community
+***************************/
+.community {
+    background: var(--svetlosiva);
+    padding: 50px 0;
+}
+.community img {
+    width: 100%;
+}
+.community article {
+    display: flex;
+    padding: 50px 0;    
+}
+.community article div:last-child {
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    flex-direction: column;
+    flex: 1;
+    background: var(--bela);
+}
+
+.community article div:first-child {
+    flex: 1;
+    background: var(--bela);
+    text-align: right;
+}
+.community h2 {
+    font-size: 1.7rem;
+    margin-bottom: 20px;
+}
+.community p {
+    font-size: 1.1rem;
+}
+.col {
+    padding: 50px;
+}
+/*************************
+gallery
+***************************/
+.galery{
+    text-align: center;
+    padding: var(--padding);
+}
+.galery h2 {
+    color: var(--crvena);
+    font-size: 3rem;
+    padding: 50px 0;
+}
+.galery article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+}
+.galery article div {
+    flex: 0 0 23%;
+    margin-top: 40px;
+}
+.galery img {
+    width: 100%;
+}
+.galery button {
+    margin-top: 50px;
+}
+/*************************
+footer
+***************************/
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 107, 107, 0.8), rgba(255, 107, 107, 0.8));
+    height: 90vh;
+    text-align: center;
+    padding: 30px 0 70px;
+}
+footer h2 {
+    font-size: 2rem;
+}
+footer form {
+    flex: 1;
+}
+footer form fieldset {
+    width: 80%;
+    margin: 0 auto 30px;
+    text-align: left;
+    border: none;
+}
+footer form label,
+footer form input,
+footer form textarea {
+  width: 100%;
+  font-size: 1.2rem;
+  padding: 10px;
+  font-family: "Nunito", sans-serif;
+  color: #292f36;
+}
+footer form input,
+footer form textarea {
+    background-color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: 2px solid rgba(237, 232, 232, 0.5);
+  resize: none;
+}
+
+footer article a i{
+    padding: 20px;
+    background: var(--bela);
+    border-radius: 50%;
+    color: var(--crvena);
+    font-size: 2rem;
+}
+footer article a {
+    padding: 10px;
+}
